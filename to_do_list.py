@@ -5,7 +5,7 @@ def show_menu():
     print("2. Add Task")
     print("3.Delete Task")
     print("4. Exit")
-def list_task():
+def list_tasks():
     if not tasks:
         print("There are no tasks!")
     else:
@@ -16,7 +16,7 @@ def add_task():
     tasks.append(task)
     print("Task added.")
 def delete_task():
-    list_task()
+    list_tasks()
     try:
         index = int(input("Type the number of the task you want to delete: ")) - 1
         if 0 <= index < len(tasks):
